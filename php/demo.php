@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>This is php application</title>
 </head>
-<body>
+<body bgcolor="#228AE5">
 <center>
-<h1> This is a Zippyops Demo Application </h1>
-<img alt="" src="index.png">
+<br>
+<br>
+
+<br>
+<h1 style = "font-family:Arial,garamond,serif;font-size:30px;"> This is a Zippyops Demo Application </h1>
+<img alt="" src="index.png" width="300" height="300">
 <h1></h1>
 <?php
 /*
@@ -78,8 +82,9 @@ function getOS($userAgent) {
   return 'n/a';
 }
 ?>
+<h4 style = "font-family:TimesNewRoman,garamond,serif;font-size:18px;"> <strong>
 This is a PHP Application deployed by chef deployed on  <?php  $os = getOS($_SERVER['HTTP_USER_AGENT']);
-echo $os; ?>  at <?php  echo date("d-m-Y"); ?>  for zippyops Demo.
+echo $os; ?>  at <?php  echo date("d-m-Y"); ?>  for zippyops Demo. </strong> </h4>
 <h1> </h1>
 
 <h1></h1>
