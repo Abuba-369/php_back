@@ -85,9 +85,13 @@ function getOS($userAgent) {
 <h4 style = "font-family:TimesNewRoman,garamond,serif;font-size:18px;"> <strong>
 This is a PHP Application deployed by chef deployed on  <?php  $os = getOS($_SERVER['HTTP_USER_AGENT']);
 echo $os; ?>  at <?php  echo date("d-m-Y"); ?>  for zippyops Demo. </strong> </h4>
-<h1> </h1>
-
-<h1></h1>
+<h1 style="color:#FF4500;font-size:20px;">
+<?php
+date_default_timezone_set("Asia/Kolkata");
+echo "The time is " . date("h:i:sa") . "<br>";
+echo "Today is " . date("l");
+?>
+</h1>
 </center>
 </body>
 </html>
